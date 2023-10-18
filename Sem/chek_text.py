@@ -16,5 +16,11 @@ with open("config.yaml", encoding="utf-8") as f:
 settings = Settings(strict=False)
 client = Client(wsdl=data["url"], settings=settings)
 
-h = client.service.checkText("малаток")
-print(h[0] ["s"] )
+#h = client.service.checkText("малаток")
+#print(h[0] ["s"] )
+# Напишем функцию
+
+def checkText(word):
+    return client.service.checkText(word)[0]["s"]
+
+#print(checkText("малако"))
