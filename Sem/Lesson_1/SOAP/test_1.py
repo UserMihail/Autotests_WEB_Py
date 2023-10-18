@@ -1,4 +1,4 @@
-from chek_text import checkText
+from Sem.Lesson_1.SOAP.chek_text import checkText
 import pytest
 
 def test_step1():
