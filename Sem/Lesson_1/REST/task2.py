@@ -14,4 +14,6 @@ import requests
 
 responce = requests.post(url="https://test-stand.gb.ru/gateway/login",
                          data={"username": "GB202307c17508", "password": "18d95d352c" })
-print(responce)
+
+print(responce.status_code)
+print(responce.json())
