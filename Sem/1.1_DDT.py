@@ -16,4 +16,5 @@ with open("config.yaml", encoding="utf-8") as f:
 settings = Settings(strict=False)
 client = Client(wsdl=data["url"], settings=settings)
 
-print(client.service.checkText("малаток"))
+h = client.service.checkText("малаток")
+print(h[0] ["s"] )
