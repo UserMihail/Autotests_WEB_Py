@@ -3,17 +3,26 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+# from webdriver_manager.opera import OperaDriverManager
+
 
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
-
-
-service = Service(testdata["driver_patch"])
-options = webdriver.ChromeOptions()
+    browser = testdata["browser"]
 
 class Site:
     def __init__(self, address):
-        self.driver = webdriver.Chrome(service=service, options=options)
+        if browser == "firefox":
+            service = Service(executable_path=GeckoDriverManager().install())
+            options = webdriver.FirefoxOptions()
+            self.driver = webdriver.Firefox(service=service, options=options)
+        elif browser == "chrome":
+            service = Service(executable_path=ChromeDriverManager().install())
+            options = webdriver.ChromeOptions()
+            self.driver = webdriver.Chrome(service=service, options=options)
+            self.driver.implicitly_wait(3)
         self.driver.maximize_window()
         self.driver.get(address)
         time.sleep(testdata["slip_time"])
