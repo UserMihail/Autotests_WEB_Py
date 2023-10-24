@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
-with open("./testdata.yaml") as f:
+with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
 

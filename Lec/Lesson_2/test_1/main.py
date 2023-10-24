@@ -1,7 +1,7 @@
 import yaml
-from module import Site
+from Lec.Lesson_2.test_1.module import Site
 
-with open("./testdata.yaml") as f:
+with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 site = Site(testdata["address"])
 
