@@ -13,7 +13,8 @@ def login():
 
 def get_post(token):
     print(token)
-    responce = requests.post(url=data.get("url"), headers={"X-Auth-Token": token},
+    responce = requests.post(url=data.get("url"),
+                             headers={"X-Auth-Token": token},
                              params={"owner": "notMy"})
     print(responce.json())
 
