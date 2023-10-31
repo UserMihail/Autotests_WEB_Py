@@ -20,6 +20,25 @@ def selector_error():
 @pytest.fixture()
 def selector_home():
     return """//*[@id="app"]/main/nav/a/span"""
+
+"""Enter element HW_2"""
+@pytest.fixture()
+def selector_button1():
+    return "#create-btn"
+@pytest.fixture()
+def selector_fistname():
+    return """//*[@id="upsert-item"]/div[1]/label/input"""
+@pytest.fixture()
+def selector_loginprof():
+    return """//*[@id="upsert-item"]/div[5]/label/input"""
+@pytest.fixture()
+def selector_save():
+    return "div.submit > button > span"
+
+@pytest.fixture()
+def selector_home_name():
+    return """//*[@id="app"]/main/div/div/div[1]/div[1]/table/tbody/tr[1]/td[2]"""
+
 @pytest.fixture()
 def site():
     site_inst = Site(testdata["address"])
