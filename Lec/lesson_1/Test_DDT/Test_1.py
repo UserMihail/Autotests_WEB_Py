@@ -1,6 +1,7 @@
-# https://www.mediawiki.org/wiki/API:Geosearch
+"""
+ https://www.mediawiki.org/wiki/API:Geosearch
 # Exempl 2. Редактируем код для теста.
-
+"""
 import requests
 S = requests.Session()
 
@@ -19,7 +20,6 @@ def get_sites(lat, long, radius, limit=100):
     sites = [i["title"] for i in pages]
     return sites
 
-def test_step1(): # Ищем достопремичательность, башную по данным коордетнатам
-    assert "One Montgomery Tower" in get_sites("37.7891838", "-122.4033522", 100), "NOTE FAUND"
+def test_step1(coord1, text1):
+    assert text1 in get_sites(coord1[0], coord1[1], 100), "NOTE FOUND"
 
-#test_step1()

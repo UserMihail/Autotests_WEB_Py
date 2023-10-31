@@ -7,10 +7,8 @@ from selenium.webdriver.chrome.service import Service
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
-
 service = Service(testdata["driver_patch"])
 options = webdriver.ChromeOptions()
-
 class Site:
     def __init__(self, address):
         self.driver = webdriver.Chrome(service=service, options=options)
