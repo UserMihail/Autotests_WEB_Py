@@ -4,9 +4,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 import pytest, yaml
 
-#with open("testdata.yaml") as f:
- #   testdata = yaml.safe_load(f)
-  #  browser = testdata["browser"]
+with open("testdata.yaml") as f:
+    testdata = yaml.safe_load(f)
+    browser = testdata["browser"]
 
 @pytest.fixture(scope="session")
 def browser():

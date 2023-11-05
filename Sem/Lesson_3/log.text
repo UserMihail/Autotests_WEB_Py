@@ -1,6 +1,6 @@
- 4-11-04 18:03:42 INFO ====== WebDriver manager ======
- 4-11-04 18:03:44 INFO Get LATEST chromedriver version for google-chrome
- 4-11-04 18:03:44 INFO Get LATEST chromedriver version for google-chrome
- 4-11-04 18:03:44 INFO Driver [C:\Users\horun\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
- 4-11-04 18:03:45 INFO Test1 Starting
- 4-11-04 18:03:46 INFO Test2 Starting
+ 5-11-05 20:18:08 INFO ====== WebDriver manager ======
+ 5-11-05 20:18:09 INFO Get LATEST chromedriver version for google-chrome
+ 5-11-05 20:18:10 INFO Get LATEST chromedriver version for google-chrome
+ 5-11-05 20:18:11 INFO Driver [C:\Users\horun\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+ 5-11-05 20:18:12 INFO Test1 Starting
+ 5-11-05 20:18:13 INFO Test2 Starting

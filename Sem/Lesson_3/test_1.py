@@ -5,7 +5,7 @@ import yaml
 with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
-def teststep1(browser):
+def test_step1(browser):
     logging.info("Test1 Starting")
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
@@ -14,7 +14,7 @@ def teststep1(browser):
     testpage.clik_login_button()
     assert testpage.get_error_text() == "401"
 
-def teststep2(browser):
+def test_step2(browser):
     logging.info("Test2 Starting")
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
