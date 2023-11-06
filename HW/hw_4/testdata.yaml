@@ -1,0 +1,27 @@
+address: https://test-stand.gb.ru/login
+browser: chrome
+sleep_time: 2
+
+login: "GB202307c17508"
+passwd: "18d95d352c"
+
+name: "Михаил"
+email: "horunzhy.m@mail.ru"
+content: "Добрый день! Рад знакомству!"
+
+fromaddr: "horunzhy.m@mail.ru"
+toaddr: "horunzhy.m@mail.ru"
+fromaddr_passwd: "d1EcT1X5kpw2LHZv7rNP"
+file: "log.txt"
+letter_body: "Отчет о тестировании"
+
+# hw_4 tests api
+
+title: "Домашняя работа"
+description: "Чатсть №4"
+content: "добавили тест API"
+
+url: https://test-stand.gb.ru/gateway/login
+api_address: https://test-stand.gb.ru/api/posts
+address_post: https://test-stand.gb.ru/gateway/posts
+not_me_title: White cat
