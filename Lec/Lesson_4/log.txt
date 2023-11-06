@@ -1,58 +1,6 @@
-2023-11-05 22:18:36 INFO ====== WebDriver manager ======
-2023-11-05 22:18:37 INFO Get LATEST chromedriver version for google-chrome
-2023-11-05 22:18:38 INFO Get LATEST chromedriver version for google-chrome
-2023-11-05 22:18:38 INFO Driver [C:\Users\horun\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
-2023-11-05 22:18:39 INFO Test1 Starting
-2023-11-05 22:19:02 INFO Test2 Starting
-2023-11-05 22:19:03 ERROR Exception while operation with ('xpath', '// *[ @ id = "login"] / div[1] / label / input')
-Traceback (most recent call last):
-  File "C:\Users\horun\OneDrive\Рабочий стол\GeekBrains\Autotests_WEB_Py\Lec\Lesson_4\testpage.py", line 33, in enter_text_into_field
-    field.send_keys(word)
-  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
-    Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
-                                                   ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\utils.py", line 137, in keys_to_typing
-    characters.extend(val)
-TypeError: 'NoneType' object is not iterable
-2023-11-05 22:19:03 ERROR Exception while operation with ('xpath', '// *[ @ id = "login"] / div[2] / label / input')
-Traceback (most recent call last):
-  File "C:\Users\horun\OneDrive\Рабочий стол\GeekBrains\Autotests_WEB_Py\Lec\Lesson_4\testpage.py", line 33, in enter_text_into_field
-    field.send_keys(word)
-  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
-    Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
-                                                   ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\utils.py", line 137, in keys_to_typing
-    characters.extend(val)
-TypeError: 'NoneType' object is not iterable
-2023-11-05 22:19:06 ERROR Find element exeption
-Traceback (most recent call last):
-  File "C:\Users\horun\OneDrive\Рабочий стол\GeekBrains\Autotests_WEB_Py\Lec\Lesson_4\BaseApp.py", line 13, in find_element
-    element = WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="app"]/main/nav/ul/li[3]/a')
-Stacktrace:
-	GetHandleVerifier [0x005072A3+45731]
-	(No symbol) [0x00492D51]
-	(No symbol) [0x0038880D]
-	(No symbol) [0x003BB940]
-	(No symbol) [0x003BBE0B]
-	(No symbol) [0x003ED1F2]
-	(No symbol) [0x003D8024]
-	(No symbol) [0x003EB7A2]
-	(No symbol) [0x003D7DD6]
-	(No symbol) [0x003B31F6]
-	(No symbol) [0x003B439D]
-	GetHandleVerifier [0x00810716+3229462]
-	GetHandleVerifier [0x008584C8+3523784]
-	GetHandleVerifier [0x0085214C+3498316]
-	GetHandleVerifier [0x00591680+611968]
-	(No symbol) [0x0049CCCC]
-	(No symbol) [0x00498DF8]
-	(No symbol) [0x00498F1D]
-	(No symbol) [0x0048B2C7]
-	BaseThreadInitThunk [0x76057BA9+25]
-	RtlInitializeExceptionChain [0x7725BD3B+107]
-	RtlClearBits [0x7725BCBF+191]
-
+2023-11-06 17:04:25 INFO ====== WebDriver manager ======
+2023-11-06 17:04:26 INFO Get LATEST chromedriver version for google-chrome
+2023-11-06 17:04:27 INFO Get LATEST chromedriver version for google-chrome
+2023-11-06 17:04:28 INFO Driver [C:\Users\horun\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+2023-11-06 17:04:29 INFO Test1 Starting
+2023-11-06 17:04:33 INFO Test2 Starting

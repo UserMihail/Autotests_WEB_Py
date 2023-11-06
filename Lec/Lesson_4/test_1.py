@@ -18,7 +18,7 @@ def test_step2(browser):
     logging.info("Test2 Starting")
     testpage = OperationsHelper(browser)
     testpage.go_to_site()
-    testpage.enter_login(testdata.get("login"))
-    testpage.enter_pass(testdata.get("passwd"))
+    testpage.enter_login(testdata.get("username"))
+    testpage.enter_pass(testdata.get("password"))
     testpage.click_login_button()
     assert "hello" in testpage.get_text().lower(), "test FAILED"
