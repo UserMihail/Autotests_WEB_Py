@@ -1,0 +1,52 @@
+2023-11-06 18:59:30 INFO ====== WebDriver manager ======
+2023-11-06 18:59:31 INFO Get LATEST chromedriver version for google-chrome
+2023-11-06 18:59:33 INFO Get LATEST chromedriver version for google-chrome
+2023-11-06 18:59:33 INFO Driver [C:\Users\horun\.wdm\drivers\chromedriver\win64\119.0.6045.105\chromedriver-win32/chromedriver.exe] found in cache
+2023-11-06 18:59:35 INFO Test1 Starting
+2023-11-06 18:59:48 INFO Send test to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-11-06 18:59:54 INFO Send test to element ('xpath', '//*[@id="login"]/div[2]/label/input')
+2023-11-06 18:59:54 INFO Click login button
+2023-11-06 18:59:55 INFO We find text 401 in error field ('xpath', '//*[@id="app"]/main/div/div/div[2]/h2')
+2023-11-06 18:59:55 INFO Test2 Starting
+2023-11-06 18:59:56 INFO Send GB202307c17508 to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-11-06 18:59:56 INFO Send 18d95d352c to element ('xpath', '//*[@id="login"]/div[2]/label/input')
+2023-11-06 18:59:56 INFO Click login button
+2023-11-06 18:59:57 INFO We find text Hello, GB202307c17508 in text field ('xpath', '//*[@id="app"]/main/nav/ul/li[3]/a')
+2023-11-06 18:59:57 INFO Click exit button
+2023-11-06 18:59:58 INFO Test3 Starting
+2023-11-06 18:59:58 INFO Send GB202307c17508 to element ('xpath', '//*[@id="login"]/div[1]/label/input')
+2023-11-06 19:00:08 ERROR Element not found
+Traceback (most recent call last):
+  File "C:\Users\horun\OneDrive\Рабочий стол\GeekBrains\Autotests_WEB_Py\Sem\Lesson_4\testpage.py", line 22, in enter_login
+    login_field = self.find_element(TestSearchLocators.ids['LOCATOR_LOGIN_FIELD'])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\horun\OneDrive\Рабочий стол\GeekBrains\Autotests_WEB_Py\Sem\Lesson_4\BaseApp.py", line 11, in find_element
+    return WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\horun\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Can't find element by locator ('xpath', '//*[@id="login"]/div[1]/label/input')
+Stacktrace:
+	GetHandleVerifier [0x00A672A3+45731]
+	(No symbol) [0x009F2D51]
+	(No symbol) [0x008E880D]
+	(No symbol) [0x0091B940]
+	(No symbol) [0x0091BE0B]
+	(No symbol) [0x0094D1F2]
+	(No symbol) [0x00938024]
+	(No symbol) [0x0094B7A2]
+	(No symbol) [0x00937DD6]
+	(No symbol) [0x009131F6]
+	(No symbol) [0x0091439D]
+	GetHandleVerifier [0x00D70716+3229462]
+	GetHandleVerifier [0x00DB84C8+3523784]
+	GetHandleVerifier [0x00DB214C+3498316]
+	GetHandleVerifier [0x00AF1680+611968]
+	(No symbol) [0x009FCCCC]
+	(No symbol) [0x009F8DF8]
+	(No symbol) [0x009F8F1D]
+	(No symbol) [0x009EB2C7]
+	BaseThreadInitThunk [0x76057BA9+25]
+	RtlInitializeExceptionChain [0x7725BD3B+107]
+	RtlClearBits [0x7725BCBF+191]
+
