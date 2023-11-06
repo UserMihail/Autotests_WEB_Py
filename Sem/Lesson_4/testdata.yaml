@@ -1,14 +1,12 @@
 address: https://test-stand.gb.ru/login
 browser: chrome
-sleep_time: 5
+sleep_time: 2
 
-# username: "GB202307c17509"
-# password: "89578a2581"
 login: "GB202307c17508"
 passwd: "18d95d352c"
 
-name: "Дарья Зверева"
-email: "nastya_911@mail.ru"
+name: "Михаил"
+email: "horunzhy.m@mail.ru"
 content: "Добрый день! Рада знакомству! У меня есть пара вопросов"
 
 fromaddr: "horunzhy.m@mail.ru"
